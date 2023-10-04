@@ -1,110 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/style.css" />
-    <style>
-      a:visited {text-decoration: none;}
-      a:link {text-decoration: none;}
-     	a:hover {text-decoration: bold;font-weight: bold;}
-      a:active {text-decoration: bold;font-weight: bold;}
-      h1 {font-weight: bold;}
-    	body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;margin-left:20pt;margin-top:20pt} 
-
-      .collapsible {
-        background-color: white;
-        color: black;
-        cursor: pointer;
-        padding: 12px;
-        width: 2%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 14px;
-      }
-
-      .active,
-      .collapsible:hover {
-        background-color: white;
-      }
-
-      .content {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: white;
-        font-size: 14px;
-      }
-
-      .wrapper {
-        max-width: 1024px;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        margin-top: 60px;
-      }
-
-      @media (max-width: 1024px) {
-        .wrapper {
-          flex-direction: column;
-          margin-top: 0px;
-        }
-      }
-
-      header {
-        margin-right: 5%;
-      }
-
-      section {
-        flex: 1;
-      }
-    </style>
-
-    <title>Gaspar Alarc&oacute;n</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <img
-        src="https://economics.wustl.edu/files/economics/styles/testimonial_desktop/public/People/Econ_Szmuloui_G-1057688.jpg?itok=fyh6MF4t"
-          width="230"
-        />
-        <p></p>
-        <h1>Gaspar Alarc&oacute;n</h1>
-        <p>
-          <strong> PhD Candidate </strong> <br />
-          <strong> Washington University in St. Louis </strong>
-        </p>
-        <p>a.gaspar@wustl.edu</p>
-      </header>
-
-      <section>
-        I am a PhD student in Economics at Washington University in St. Louis. [<a href="files/cv.pdf">CV</a>]
-       
-      </section>
-    </div>
-    <br />
-    <br />
-    <br />
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-    </script>
-  </body>
+<head>
+ 	<meta charset="utf-8" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8" />
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Gaspar Alarc&oacute;n</title>
+	<style>
+		a:visited {text-decoration: none;}
+      		a:link {text-decoration: none;}
+     		a:hover {text-decoration: bold;font-weight: bold;}
+      		a:active {text-decoration: bold;font-weight: bold;}
+      		h1 {font-weight: bold;}
+    		body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;margin-left:20pt;margin-top:20pt} 
+	</style>
+</head>
+<h1>Gaspar Alarc&oacute;n</h1>
+<p>I am a PhD student in Economics at Washington University in St. Louis. [<a href="files/cv.pdf">CV</a>]<p/>
+<p><strong>Contact</strong> a.gaspar@wustl.edu</p>
+</body>
 </html>
