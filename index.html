@@ -21,11 +21,14 @@
 
       a:hover, a:active {
         font-weight: bold;
+        color: #0056b3;
       }
 
       h1 {
         font-weight: bold;
         font-family: "Georgia", serif;
+        font-size: 36px;
+        margin-bottom: 10px;
       }
 
       .profile {
@@ -34,52 +37,93 @@
         display: flex;
         flex-direction: row;
         margin-top: 60px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
       @media (max-width: 1024px) {
         .profile {
           flex-direction: column;
-          margin-top: 0;
+          margin-top: 20px;
         }
       }
 
       header {
         margin-right: 5%;
         text-align: center;
+        flex: 1;
       }
 
       header img {
         width: 100%;
         max-width: 300px;
         height: auto;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      header img:hover {
+        transform: scale(1.1);
       }
 
       section {
-        flex: 1;
+        flex: 2;
         padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
       section p {
         margin-bottom: 15px;
+        font-size: 16px;
       }
 
       section a {
         font-weight: bold;
+        color: #0066cc;
+        transition: color 0.3s ease;
+      }
+
+      section a:hover {
+        color: #0056b3;
       }
 
       .social-links {
         margin-top: 20px;
+        display: flex;
+        gap: 15px;
       }
 
       .social-links a {
-        margin: 0 10px;
-        font-size: 20px;
+        font-size: 22px;
         color: #0066cc;
-        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
       }
 
       .social-links a:hover {
         color: #0056b3;
+        transform: scale(1.1);
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -103,14 +147,24 @@
 
         <!-- Social Media Links -->
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
-          <a href="https://twitter.com/your-twitter-handle" target="_blank">Twitter</a>
-          <!-- Add other social links as needed -->
+          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" title="LinkedIn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo_2013.svg/1200px-LinkedIn_Logo_2013.svg.png" alt="LinkedIn" width="30" />
+          </a>
+          <a href="https://twitter.com/your-twitter-handle" target="_blank" title="Twitter">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Twitter_Logo_2021.svg/800px-Twitter_Logo_2021.svg.png" alt="Twitter" width="30" />
+          </a>
+          <!-- Add other social media icons here -->
         </div>
       </section>
     </div>
+
+    <footer>
+      <p>Contact: <a href="mailto:a.gaspar@wustl.edu">a.gaspar@wustl.edu</a></p>
+      <p>&copy; 2025 Gaspar Alarcón. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
+
 
 
 
