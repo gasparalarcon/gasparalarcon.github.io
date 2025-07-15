@@ -9,30 +9,16 @@
   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
 
   <style>
-    :root {
-      --bg-color: #f0f4f8;
-      --text-color: #2c3e50;
-      --card-bg: #ffffff;
-      --link-color: #1a73e8;
-    }
-
-    body.dark-mode {
-      --bg-color: #1e1e1e;
-      --text-color: #f0f0f0;
-      --card-bg: #2c2c2c;
-      --link-color: #4dabf7;
-    }
-
     body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
+      background-color: #f0f4f8;
+      color: #2c3e50;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-     : background-color 0.3s, color 0.3s;
+      padding: 0;
     }
 
     a:link, a:visited {
-      color: var(--link-color);
+      color: #1a73e8;
       text-decoration: none;
     }
 
@@ -52,11 +38,10 @@
       margin: 60px auto;
       display: flex;
       flex-direction: row;
-      background: var(--card-bg);
+      background: #ffffff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
       overflow: hidden;
-      transition: background-color 0.3s;
     }
 
     @media (max-width: 768px) {
@@ -80,57 +65,11 @@
     section {
       flex: 1;
       padding: 20px;
-      background-color: var(--card-bg);
+      background-color: #ffffff;
     }
 
     p {
       line-height: 1.6;
-    }
-
-    .toggle-container {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1.2em;
-    }
-
-    .toggle-container input[type="checkbox"] {
-      width: 40px;
-      height: 20px;
-      appearance: none;
-      background: #ccc;
-      border-radius: 20px;
-      position: relative;
-      outline: none;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .toggle-container input[type="checkbox"]::before {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      background: white;
-      border-radius: 50%;
-      top: 1px;
-      left: 1px;
-      transition: transform 0.3s;
-    }
-
-    .toggle-container input[type="checkbox"]:checked {
-      background: #4dabf7;
-    }
-
-    .toggle-container input[type="checkbox"]:checked::before {
-      transform: translateX(20px);
-    }
-
-    .icon {
-      font-size: 1.2em;
     }
 
     .social-icons {
@@ -139,64 +78,36 @@
 
     .social-icons a {
       margin: 0 8px;
-      color: var(--text-color);
+      color: #2c3e50;
       font-size: 1.5em;
       transition: color 0.3s;
     }
 
     .social-icons a:hover {
-      color: var(--link-color);
+      color: #1a73e8;
     }
   </style>
 </head>
 <body>
-  <div class="toggle-container">
-    <span class="icon" id="themeIcon">🌞</span>
-    <input type="checkbox" id="darkModeToggle" />
-  </div>
-
   <div class="profile">
     <header>
-      <img
-        src="https://economics.wustl.edu/sites/e/files/styles/square_1_1_1888w/public/people/econ_szmuloui_g-1057688.jpg.webp
+      https://economics.wustl.edu/sites/economics.wustl.edu/files/styles/square_1_1_1888w/public/people/econ_szmuloui_g-1057688.jpg.webp
       <h1>Gaspar Alarcón</h1>
       <p><strong>PhD Candidate in Economics</strong><br />
          <strong>Washington University in St. Louis</strong></p>
       <p>a.gaspar@wustl.edu</p>
 
       <div class="social-icons">
-        https://wustl.edu
-        <https://www.linkedin.com/in/gasparalarconsz/
-        <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank"scholar.google.com/citations?user=LAR-ID
-        <a href="https://twitter.com/YOUR-TWITTER-HANDLE" target="_blank" title="Twitter">
-          am a PhD student in Economics at Washington University in St. Louis.</p>
+        <a href="https://wustl.edu" target="_blank" title="Washington University">
+         E<a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </aitle="Google Scholar">
+          <i class="nk" title="Twitter">
+          <i class="fab fa-twitter"></i at Washington University in St. Louis.</p>
       <p>My research focuses on Macroeconomics and Macro-Development.</p>
       <p>My <strong>CV</strong> is available <a href="files/cv.pdf" target="_blank">here</a>.</p>
     </section>
   </div>
-
-  <script>
-    const toggle = document.getElementById('darkModeToggle');
-    const body = document.body;
-    const icon = document.getElementById('themeIcon');
-
-    function updateIcon(isDark) {
-      icon.textContent = isDark ? '🌙' : '🌞';
-    }
-
-    if (localStorage.getItem('theme') === 'dark') {
-      body.classList.add('dark-mode');
-      toggle.checked = true;
-      updateIcon(true);
-    }
-
-    toggle.addEventListener('change', () => {
-      const isDark = toggle.checked;
-      body.classList.toggle('dark-mode', isDark);
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      updateIcon(isDark);
-    });
-  </script>
 </body>
 </html>
 
@@ -283,3 +194,4 @@
     </div>
   </body>
 </html>
+-->
