@@ -1,179 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Gaspar Alarcón</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Gaspar Alarcón</title>
 
-    <!-- SEO Metadata -->
-    <meta name="description" content="Gaspar Alarcón - PhD Candidate in Economics at Washington University in St. Louis. Research in Macroeconomics and Development Economics.">
-    <meta name="author" content="Gaspar Alarcón" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- SEO Metadata -->
+  <meta name="description" content="Gaspar Alarcón - PhD Candidate in Economics at Washington University in St. Louis. Research in Macroeconomics and Development Economics.">
+  <meta name="author" content="Gaspar Alarcón" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WXXL6QTE4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-4WXXL6QTE4');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WXXL6QTE4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <!-- Font Awesome for Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-yNE1rM8RRoc1gPND0IaKjPzKYAP0EzClIM0eNCSAjfL1XQknpsm5Iq0GjR3djGvU2BdHZOmZAMNmEeA3v9OMtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    gtag('config', 'G-4WXXL6QTE4');
+  </script>
 
-    <style>
-      body {
-        background-color: #f0f0f0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #333;
-        margin: 0;
-        padding: 0;
-      }
+  <!-- Font Awesome (for social icons) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
 
-      a:visited,
-      a:link {
-        text-decoration: none;
-        color: #0066cc;
-      }
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-      a:hover,
-      a:active {
-        font-weight: bold;
-        color: #0056b3;
-      }
+    .profile {
+      max-width: 1024px;
+      margin: 60px auto;
+      display: flex;
+      flex-direction: row;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-      h1 {
-        font-weight: bold;
-        font-family: "Georgia", serif;
-        font-size: 36px;
-        margin-bottom: 10px;
-      }
-
+    @media (max-width: 768px) {
       .profile {
-        max-width: 1024px;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        margin-top: 60px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      @media (max-width: 1024px) {
-        .profile {
-          flex-direction: column;
-          margin-top: 20px;
-        }
-      }
-
-      header {
-        margin-right: 5%;
-        text-align: center;
-        flex: 1;
-      }
-
-      header img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        border-radius: 50%;
-        transition: transform 0.3s ease-in-out;
-      }
-
-      header img:hover {
-        transform: scale(1.05);
-      }
-
-      section {
-        flex: 2;
-        padding-left: 20px;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
       }
+    }
 
-      section p {
-        margin-bottom: 15px;
-        font-size: 16px;
-      }
+    header {
+      text-align: center;
+      flex: 1;
+      margin-right: 5%;
+    }
 
-      .social-links {
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        font-size: 22px;
-      }
+    header img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 50%;
+    }
 
-      .social-links a {
-        color: #0066cc;
-        transition: color 0.3s ease, transform 0.3s ease;
-      }
+    header img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
 
-      .social-links a:hover {
-        color: #0056b3;
-        transform: scale(1.1);
-      }
+    section {
+      flex: 2;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-      footer {
-        background-color: #595959;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        margin-top: 40px;
-        font-size: 14px;
-      }
-    </style>
-  </head>
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 32px;
+      margin: 10px 0;
+    }
 
-  <body>
-    <div class="profile">
-      <header>
-        <img
-          src="https://economics.wustl.edu/sites/economics.wustl.edu/files/styles/square_1_1_1888w/public/people/econ_szmuloui_g-1057688.jpg.webp"
-          alt="Professional headshot of Gaspar Alarcón"
-        />
-        <h1>Gaspar Alarcón</h1>
-        <p>
-          <strong>PhD Candidate in Economics</strong><br />
-          <strong>Washington University in St. Louis</strong>
-        </p>
-        <p>
-          <a href="mailto:a.gaspar@wustl.edu">a.gaspar@wustl.edu</a>
-        </p>
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
 
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/gasparalarcon" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://economics.wustl.edu/people/gaspar-alarcon-szmulai" target="_blank" rel="noopener noreferrer" title="WashU Profile">
-            <i class="fas fa-graduation-cap"></i>
-          </a>
-        </div>
-      </header>
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
 
-      <section>
-        <p>I am a PhD student in Economics at Washington University in St. Louis.</p>
-        <p>My research focuses on Macroeconomics and Macro-Development.</p>
-        <p>
-          My <strong>CV</strong> is available
-          <a href="files/cv.pdf" target="_blank" rel="noopener noreferrer" download>here</a>.
-        </p>
-      </section>
-    </div>
+    a:hover,
+    a:active {
+      font-weight: bold;
+      color: #0056b3;
+      text-decoration: none;
+    }
 
-    <footer>
-      <p>&copy; 2025 Gaspar Alarcón. All Rights Reserved.</p>
-    </footer>
-  </body>
+    footer {
+      background-color: #595959;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .social {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 24px;
+    }
+
+    .social a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .social a:hover {
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.02);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="profile">
+    <header>
+      <img
+        src="https://economics.wustl.edu/sites/economics.wustl.edu/files/styles/square_1_1_1888w/public/people/econ_szmuloui_g-1057688.jpg.webp"
+        alt="Gaspar Alarcón"
+      />
+      <h1>Gaspar Alarcón</h1>
+      <p><strong>PhD Candidate in Economics</strong><br>Washington University in St. Louis</p>
+      <p><a href="mailto:a.gaspar@wustl.edu">a.gaspar@wustl.edu</a></p>
+
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/gasparalarconsz" target="_blank" title="LinkedIn" class="fab fa-linkedin"> </a>
+        <a href="https://economics.wustl.edu/people/gaspar-alarcon-szmulai" target="_blank" title="WashU Profile" class="fas fa-university"> </a>
+      </div>
+    </header>
+
+    <section>
+      <p>I am a PhD student in Economics at Washington University in St. Louis.</p>
+      <p>My research focuses on Macroeconomics and Macro-Development.</p>
+      <p>
+        My <strong>CV</strong> is available
+        <a href="files/cv.pdf" target="_blank" download>here</a>.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Gaspar Alarcón. All Rights Reserved.</p>
+  </footer>
+</body>
 </html>
+
+
