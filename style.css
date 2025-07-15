@@ -1,0 +1,143 @@
+body {
+    background-color: #f0f0f0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.profile {
+    max-width: 1024px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .profile {
+    flex-direction: column;
+    }
+}
+
+header {
+    text-align: center;
+    flex: 1;
+    margin-right: 5%;
+}
+
+header img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+header img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+section {
+    flex: 2;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    font-weight: bold;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #595959;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.social a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.social a:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+paper {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+details {
+    color: #0056b3;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+details summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 14px;
+}
+
+details summary::-webkit-details-marker {
+    display: none; /* hides the triangle */
+}
+
+details[open] summary {
+    font-weight: bold;
+}
+
+details p {
+    margin: 0px;
+    font-size: 14px;
+    color: #333;
+}
