@@ -1,4 +1,208 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaspar Alarcón</title>
+
+  <!-- Font Awesome for icons -->
+  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
+
+  <style>
+    :root {
+      --bg-color: #f0f4f8;
+      --text-color: #2c3e50;
+      --card-bg: #ffffff;
+      --link-color: #1a73e8;
+    }
+
+    body.dark-mode {
+      --bg-color: #1e1e1e;
+      --text-color: #f0f0f0;
+      --card-bg: #2c2c2c;
+      --link-color: #4dabf7;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+     : background-color 0.3s, color 0.3s;
+    }
+
+    a:link, a:visited {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    a:hover, a:active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    .profile {
+      max-width: 960px;
+      margin: 60px auto;
+      display: flex;
+      flex-direction: row;
+      background: var(--card-bg);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: background-color 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+        margin: 20px;
+      }
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    section {
+      flex: 1;
+      padding: 20px;
+      background-color: var(--card-bg);
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .toggle-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.2em;
+    }
+
+    .toggle-container input[type="checkbox"] {
+      width: 40px;
+      height: 20px;
+      appearance: none;
+      background: #ccc;
+      border-radius: 20px;
+      position: relative;
+      outline: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .toggle-container input[type="checkbox"]::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: white;
+      border-radius: 50%;
+      top: 1px;
+      left: 1px;
+      transition: transform 0.3s;
+    }
+
+    .toggle-container input[type="checkbox"]:checked {
+      background: #4dabf7;
+    }
+
+    .toggle-container input[type="checkbox"]:checked::before {
+      transform: translateX(20px);
+    }
+
+    .icon {
+      font-size: 1.2em;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      margin: 0 8px;
+      color: var(--text-color);
+      font-size: 1.5em;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--link-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-container">
+    <span class="icon" id="themeIcon">🌞</span>
+    <input type="checkbox" id="darkModeToggle" />
+  </div>
+
+  <div class="profile">
+    <header>
+      <img
+        src="https://economics.wustl.edu/sites/e/files/styles/square_1_1_1888w/public/people/econ_szmuloui_g-1057688.jpg.webp
+      <h1>Gaspar Alarcón</h1>
+      <p><strong>PhD Candidate in Economics</strong><br />
+         <strong>Washington University in St. Louis</strong></p>
+      <p>a.gaspar@wustl.edu</p>
+
+      <div class="social-icons">
+        https://wustl.edu
+        <https://www.linkedin.com/in/gasparalarconsz/
+        <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank"scholar.google.com/citations?user=LAR-ID
+        <a href="https://twitter.com/YOUR-TWITTER-HANDLE" target="_blank" title="Twitter">
+          am a PhD student in Economics at Washington University in St. Louis.</p>
+      <p>My research focuses on Macroeconomics and Macro-Development.</p>
+      <p>My <strong>CV</strong> is available <a href="files/cv.pdf" target="_blank">here</a>.</p>
+    </section>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    const icon = document.getElementById('themeIcon');
+
+    function updateIcon(isDark) {
+      icon.textContent = isDark ? '🌙' : '🌞';
+    }
+
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggle.checked = true;
+      updateIcon(true);
+    }
+
+    toggle.addEventListener('change', () => {
+      const isDark = toggle.checked;
+      body.classList.toggle('dark-mode', isDark);
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      updateIcon(isDark);
+    });
+  </script>
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -6,85 +210,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-<style>
-  body {
-    background-color: #f4f4f4; /* Light gray background */
-    font-family: "Georgia", serif; /* Elegant serif font */
-    color: #333; /* Darker text for better contrast */
-  }
-
-  a:visited, a:link {
-    text-decoration: none;
-    color: #0066cc; /* Link color */
-  }
-
-  a:hover, a:active {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  h1 {
-    font-weight: bold;
-    font-family: "Georgia", serif;
-  }
-
-  .profile {
-    max-width: 1024px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    margin-top: 60px;
-  }
-
-  @media (max-width: 1024px) {
-    .profile {
-      flex-direction: column;
-      margin-top: 0px;
-    }
-  }
-
-  header {
-    margin-right: 5%;
-  }
-
-  section {
-    flex: 1;
-  }
-</style>
+	<style>
+		body {
+		background-color: #bebebe; 
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #333; 
+		}
+		
+		a:visited, a:link {
+		text-decoration: none;
+		color: #0066cc;
+		}
+		
+		a:hover, a:active {
+		font-weight: bold;
+		text-decoration: bold;
+		}
+		
+		h1 {
+		font-weight: bold;
+		font-family: "Georgia", serif;
+		}
+		
+		.profile {
+		max-width: 1024px;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		margin-top: 60px;
+		}
+		
+		@media (max-width: 1024px) {
+		.profile {
+		flex-direction: column;
+		margin-top: 0px;
+		}
+		}
+		
+		header {
+		margin-right: 5%;
+		}
+		
+		section {
+		flex: 1;
+		}
+	</style>
 	  
-<!--	  
-    <style>
-      	a:visited {text-decoration: none;}
-      	a:link {text-decoration: none;}
-	a:hover {text-decoration: bold;font-weight: bold;}
-      	a:active {text-decoration: bold;font-weight: bold;}
-      	h1 {font-weight: bold;}
-    	body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;} 
-
-      .profile {
-        max-width: 1024px;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        margin-top: 60px;
-      }
-
-      @media (max-width: 1024px) {
-        .profile {
-          flex-direction: column;
-          margin-top: 0px;
-        }
-      }
-
-      header {
-        margin-right: 5%;
-      }
-
-      section {
-        flex: 1;
-      }
-    </style>
--->	  
 
     <title>Gaspar Alarc&oacute;n</title>
   </head>
