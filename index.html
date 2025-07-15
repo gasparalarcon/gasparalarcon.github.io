@@ -11,10 +11,16 @@
     <meta name="author" content="Gaspar Alarcón" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <!-- Favicon (optional) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WXXL6QTE4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-4WXXL6QTE4');
+    </script>
 
-    <!-- Font Awesome CDN for icons -->
+    <!-- Font Awesome for Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -102,11 +108,11 @@
       }
 
       .social-links {
-        margin-top: 20px;
+        margin-top: 10px;
         display: flex;
-        gap: 20px;
         justify-content: center;
-        font-size: 24px;
+        gap: 15px;
+        font-size: 22px;
       }
 
       .social-links a {
@@ -127,7 +133,6 @@
         margin-top: 40px;
         font-size: 14px;
       }
-
     </style>
   </head>
 
@@ -136,7 +141,7 @@
       <header>
         <img
           src="https://economics.wustl.edu/sites/economics.wustl.edu/files/styles/square_1_1_1888w/public/people/econ_szmuloui_g-1057688.jpg.webp"
-          alt="Portrait of Gaspar Alarcón"
+          alt="Professional headshot of Gaspar Alarcón"
         />
         <h1>Gaspar Alarcón</h1>
         <p>
@@ -145,24 +150,16 @@
         </p>
         <p>
           <a href="mailto:a.gaspar@wustl.edu">a.gaspar@wustl.edu</a>
-        
-          <a
-          href="https://www.linkedin.com/in/gasparalarcon"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="LinkedIn"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a
-          href="https://economics.wustl.edu/people/gaspar-alarcon-szmulai"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="WashU Profile"
-        >
-          <i class="fas fa-graduation-cap"></i>
-        </a>
-      </p>
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/gasparalarcon" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://economics.wustl.edu/people/gaspar-alarcon-szmulai" target="_blank" rel="noopener noreferrer" title="WashU Profile">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+        </div>
       </header>
 
       <section>
