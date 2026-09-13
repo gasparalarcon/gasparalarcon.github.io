@@ -78,7 +78,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--ochre); outline-of
 }
 
 .photo{
-  width:min(180px, 100%);
+  width:min(220px, 100%);
   aspect-ratio:1;
   border-radius:2px;  /* slightly rounded corners; use 50% for a circle */
   overflow:hidden;
