@@ -1,115 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Gaspar Alarcón</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gaspar Alarcón - PhD in Economics, Washington University in St. Louis. Research in Macroeconomics and Development Economics.">
+<meta name="author" content="Gaspar Alarcón">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Gaspar Alarcón — Economist</title>
 
-  <!-- SEO Metadata -->
-  <meta name="description" content="Gaspar Alarcón - PhD in Economics, Washington University in St. Louis. Research in Macroeconomics and Development Economics.">
-  <meta name="author" content="Gaspar Alarcón" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WXXL6QTE4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WXXL6QTE4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  gtag('config', 'G-4WXXL6QTE4');
+</script>
 
-    gtag('config', 'G-4WXXL6QTE4');
-  </script>
 
-  <!-- Font Awesome (for social icons) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-  />
+<!--
+  FONTS
+  Newsreader = serif font for name/headlines
+  Inter = body text and UI
+  IBM Plex Mono = small data labels (dates, tags, links, footer)
+  To change fonts, swap the family names in the URL below AND in style.css
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
-
+<!-- All styling lives in style.css, in the same folder as this file -->
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="profile">
-    <header>
-      <img
-        src="https://economics.washu.edu/sites/economics.washu.edu/files/styles/square_1_1_1888w/public/people/econ_szmuloui_g-1057688.jpg.webp?h=2610c598"
-        alt="Gaspar Alarcón"
-      />
-      <h1>Gaspar Alarcón</h1>
-      <p>Economist at IMF</p>
-      <p><a href="files/AlarconCV.pdf" target="_blank" rel="noopener noreferrer" title="Curriculum Vitae">Curriculum Vitae</a></p>
-      <p><a href="mailto:galarconszmulai@imf.org">galarconszmulai@imf.org</a></p>
+<div class="wrap">
 
-      <div class="social">
-        <a href="https://www.linkedin.com/in/gasparalarconsz" target="_blank" title="LinkedIn" class="fab fa-linkedin"> </a>
+  <!-- ============================================================
+       LEFT MASTHEAD
+       Sticky sidebar: photo, name, role, CV link, contact, fields.
+       ============================================================ -->
+  <aside class="masthead">
+
+    <!-- Profile photo. Replace the src with your own image path,
+         e.g. "images/photo.jpg" if you add a local file. -->
+    <div class="photo">
+      <img src="https://economics.washu.edu/sites/economics.washu.edu/files/styles/square_1_1_1888w/public/people/econ_szmuloui_g-1057688.jpg.webp?h=2610c598" alt="Gaspar Alarcón">
+    </div>
+
+    <h1 class="m-name">Gaspar Alarcón</h1>
+    <p class="m-role"><strong>Economist</strong>, Research Department<br>International Monetary Fund</p>
+
+    <!-- CV download button. Update the href to point to your CV file. -->
+    <div class="m-block">
+      <a class="cv-btn" href="files/AlarconCV.pdf">Download CV (PDF)</a>
+    </div>
+
+    <!-- Contact links -->
+    <div class="m-block">
+      <p class="m-label">Contact</p>
+      <a href="mailto:galarconszmulai@imf.org">galarconszmulai@imf.org</a>
+      <a href="https://www.linkedin.com/in/gasparalarconsz" target="_blank">LinkedIn</a>
+    </div>
+
+    <!-- Research field tags. Add/remove <span class="tag"> elements
+         as needed — they wrap automatically. -->
+    <div class="m-block">
+      <p class="m-label">Fields</p>
+      <div class="fields">
+        <span class="tag">Macroeconomics</span>
+        <span class="tag">Development</span>
+        <span class="tag">Misallocation</span>
+        <span class="tag">Structural Transformation</span>
       </div>
-    </header>
+    </div>
 
-    <section>
-      <p>I am an Economist in the Research Department at the International Monetary Fund. My research focuses on Macroeconomics and Macro-Development.</p>               
-      <p>I received my PhD in Economics in 2026 from Washington University in St. Louis. </p>    
-          
-      <h2>Research</h2>
+  </aside>
 
-      <h3>Working Papers</h3>
+  <!-- ============================================================
+       RIGHT MAIN CONTENT
+       Bio, Working Papers, Work in Progress, footer.
+       ============================================================ -->
+  <main>
 
-      <paper><strong>Complementarity and the Amplification of Financial Frictions</strong> <a href="files/AlarconJMP.pdf" target="_blank" rel="noopener noreferrer">[draft]</a> with Hiroyuki Nemoto</paper> 
-        <details>
-          <summary>Abstract</summary>
-          <p>
-            Does improving the access to financing lead to more productive firms? We study the implications of complementarity on productivity under financial frictions. 
-            We develop a model of heterogeneous producers facing collateral constraints and a technology adoption decision. Producers’ choices are connected through 
-            the final good market, creating complementarity in adoption. We find that more complementarity between producers amplifies the effects of financial frictions 
-            through more sensitive adoption. In a high-complementarity economy, adopters increase up to 219% relative to the self-financing economy. Misallocation is the 
-            main driver of TFP loss only when complementarity is low. Our results imply that economies with high complementarity benefit more from financial liberalizations, 
-            incentivizing the adoption of more productive technologies.
-          </p>
-        </details>
+    <!-- BIO -->
+    <div class="bio">
+      <p>I am an Economist in the Research Department at the International Monetary Fund. My research sits at the intersection of macroeconomics and development, asking why productivity and capital are often misallocated across firms and sectors, and what that means for growth, financial development, and structural transformation in developing economies. </p>
+      <p>I received my Ph.D. in Economics in 2026 from Washington University in St. Louis.</p>
+    </div>
 
-      <h3>Work in Progress</h3>
-    
-      <paper><strong>Persistence of Misallocation: The Long-Run Effects of Setup Costs</strong> with Hiroyuki Nemoto</paper> <!--[<a href="files/x.pdf">Draft</a>]-->
-        <!--
-        <details>
-          <summary>Abstract</summary>
-          <p>
-            Coming soon.
-          </p>
-        </details>
-      -->
-      <br>
+    <!-- ============================================================
+         WORKING PAPERS
+         To add another paper: copy one <div class="paper">...</div>
+         block, update the number in .p-num, and fill in the title,
+         coauthor, abstract, and link. Also bump "sec-count" below.
+         ============================================================ -->
+    <section class="research">
+      <div class="sec-head">
+        <h2 class="sec-title">Working Papers</h2>
+        <span class="sec-count">01</span> <!-- total count of papers below -->
+      </div>
 
-      <paper><strong>The Natural Rate of Structural Transformation</strong> with Paco Buera, Joe Kaboski, and Marti Mestieri</paper> <!--[<a href="files/x.pdf">Draft</a>]-->
-        <!--
-        <details>
-          <summary>Abstract</summary>
-          <p>
-            Coming soon.
-          </p>
-        </details>
-      -->
+      <div class="paper">
+        <span class="p-num">01</span>
+        <div>
+          <h3 class="p-title"><a href="files/AlarconJMP.pdf" target="_blank">Complementarity and the Amplification of Financial Frictions</a></h3>
+          <p class="p-coauthor">with Hiroyuki Nemoto</p>
+          <p class="p-abstract">Does improving the access to financing lead to more productive firms? We study the implications of complementarity on productivity under financial frictions. We develop a model of heterogeneous producers facing collateral constraints and a technology adoption decision. Producers’ choices are connected through the final good market, creating complementarity in adoption. We find that more complementarity between producers amplifies the effects of financial frictions through more sensitive adoption. In a high-complementarity economy, adopters increase up to 219% relative to the self-financing economy. Misallocation is the main driver of TFP loss only when complementarity is low. Our results imply that economies with high complementarity benefit more from financial liberalizations, incentivizing the adoption of more productive technologies. </p>
+          <div class="p-links">
+            <a href="files/AlarconJMP.pdf" target="_blank">Draft (PDF) →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more .paper blocks here as you publish more working papers -->
 
     </section>
-  </div>
 
-  <footer>
-    <p>&copy; 2026 Gaspar Alarcón. All Rights Reserved.</p>
-  </footer>
+    <!-- ============================================================
+         WORK IN PROGRESS
+         Simpler entries — no abstract or links, just title + coauthors.
+         To add another: copy one .wip-item block.
+         ============================================================ -->
+    <section class="research">
+      <div class="sec-head">
+        <h2 class="sec-title">Work in Progress</h2>
+        <span class="sec-count">02</span>
+      </div>
+      <div class="wip">
+        <div class="wip-item">
+          <span class="p-num">02</span>
+          <div>
+            <p class="wip-title">Persistence of Misallocation: The Long-Run Effects of Setup Costs</p>
+            <p class="wip-coauthor">with Hiroyuki Nemoto</p>
+          </div>
+        </div>
+        <div class="wip-item">
+          <span class="p-num">03</span>
+          <div>
+            <p class="wip-title">The Natural Rate of Structural Transformation</p>
+            <p class="wip-coauthor">with Paco Buera, Joe Kaboski, and Marti Mestieri</p>
+          </div>
+        </div>
+
+        <!-- Add more .wip-item blocks here -->
+
+      </div>
+    </section>
+
+    <!-- FOOTER: disclaimer + copyright. -->
+    <footer>
+      <p style="font-style:italic; margin:0 0 10px 0; max-width:60ch;">The views expressed here do not necessarily reflect those of the IMF, its Executive Board, or its management.</p>
+      <p style="margin:0;">© 2026 Gaspar Alarcón</p>
+    </footer>
+
+  </main>
+
+</div>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
